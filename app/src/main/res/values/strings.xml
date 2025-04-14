@@ -1,6 +1,10 @@
 <resources>
-    <string name="app_name">Third assignment template</string>
+    <string name="app_name" translatable="false">Third assignment template</string>
     <string name="open_receiver_activity">Open new activity</string>
     <string name="btn_add">Add note</string>
     <string name="type_note_here">Type note here</string>
+    <string name="add_note_landscape">Add note from landscape</string>
+    <string name="delete_note_from_landscape">Delete note from landscape</string>
+    <string name="add_note">Add note</string>
+    <string name="delete_note">Delete note</string>
 </resources>

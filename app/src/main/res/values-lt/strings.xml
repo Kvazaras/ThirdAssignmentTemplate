@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="open_receiver_activity">Atverti naują langą</string>
+    <string name="btn_add">Sukurti įrašą</string>
+    <string name="type_note_here">Įrašo tekstas</string>
+    <string name="add_note_landscape">Lanscape testas</string>
+    <string name="delete_note_from_landscape">Lanscape testas</string>
+    <string name="add_note">Įkelti įrašą</string>
+    <string name="delete_note">Ištrinti įrašą</string>
+</resources>

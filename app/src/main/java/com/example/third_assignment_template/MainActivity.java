@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         this.lvNotes = findViewById(R.id.lvNotes);
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        this.notesList = new ArrayList<String>(sp.getStringSet("notes", new HashSet<String>()));
+        this.notesList = new ArrayList<String>(sp.getStringSet(Constants.SHARED_PREF_NOTES_LIST, new HashSet<String>()));
         this.listAdapter = new ArrayAdapter<>(getApplicationContext(), android.R.layout.simple_list_item_1, notesList);
         this.lvNotes.setAdapter(this.listAdapter);
     }
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         //Your adapter loses reference to your list.
         //https://stackoverflow.com/questions/15422120/notifydatasetchange-not-working-from-custom-adapter
         notesList.clear();
-        this.notesList.addAll((sp.getStringSet("notes",new HashSet<String>())));
+        this.notesList.addAll((sp.getStringSet(Constants.SHARED_PREF_NOTES_LIST,new HashSet<String>())));
         listAdapter.notifyDataSetChanged();
     }
 
