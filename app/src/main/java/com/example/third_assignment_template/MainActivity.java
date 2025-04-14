@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         //Your adapter loses reference to your list.
         //https://stackoverflow.com/questions/15422120/notifydatasetchange-not-working-from-custom-adapter
         notesList.clear();
-        this.notesList.addAll((sp.getStringSet("notes", new HashSet<String>())));
+        this.notesList.addAll((sp.getStringSet("notes",new HashSet<String>())));
         listAdapter.notifyDataSetChanged();
     }
 

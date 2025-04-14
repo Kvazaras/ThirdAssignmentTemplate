@@ -30,7 +30,7 @@ public class AddNoteActivity extends AppCompatActivity {
         newStrSet.add(txtNote.getText().toString());
         newStrSet.addAll(oldSet);
 
-        spEd.putStringSet("notes",newStrSet);
+        spEd.putStringSet("notes", newStrSet);
         spEd.apply();
 
         finish();
