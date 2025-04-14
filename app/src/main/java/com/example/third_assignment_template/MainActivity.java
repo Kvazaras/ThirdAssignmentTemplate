@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
+        ///data/data/com.example.third_assignment_template/shared_prefs/com.example.third_assignment_template_preferences.xml
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         //Your adapter loses reference to your list.
         //https://stackoverflow.com/questions/15422120/notifydatasetchange-not-working-from-custom-adapter
